@@ -32,6 +32,7 @@ const Quiz = () => {
   };
 
   return (
+    <div className='p-5 shadow-2xl mx-[10rem] pb-12' >
     <div className="md:w-[80%] sm:w-[95%] w-[98%] mx-auto p-4">
       <h2 className="text-2xl font-bold mb-4">Select a Quiz</h2>
       <select
@@ -84,6 +85,7 @@ const Quiz = () => {
           <p className="font-medium">Score: {score}/{selectedQuiz.questions.length}</p>
         </div>
       )}
+    </div>
     </div>
   );
 };

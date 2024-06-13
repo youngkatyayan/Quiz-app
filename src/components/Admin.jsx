@@ -18,8 +18,9 @@ const Admin = () => {
   };
 
   return (
-    <div className="md:w-[80%] sm:w-[95%] w-[98%] mx-auto p-4">
-      <h2 className="text-2xl font-bold mb-4">Create a Quiz</h2>
+    <div className='p-5 shadow-2xl mx-[10rem]' >
+    <div className="md:w-[70%] sm:w-[95%] w-[98%] mx-auto p-4">
+      <h2 className="text-3xl font-bold mb-4 text-center" style={{ textShadow: '5px 5px 5px' }}>Create a Quiz </h2>
       <input
         type="text"
         className="border rounded p-2 w-full mb-4"
@@ -58,16 +59,17 @@ const Admin = () => {
       />
       <button
         onClick={addQuestion}
-        className="bg-blue-500 text-white p-2 rounded mr-2"
+        className="bg-blue-500 text-white p-2 rounded-lg hover:shadow-md hover:border-2 hover:rounded-full hover:shadow-blue-600 mr-2"
       >
         Add Question
       </button>
       <button
         onClick={saveQuiz}
-        className="bg-green-500 text-white p-2 rounded"
+        className="bg-green-500 text-white p-2 rounded-lg hover:shadow-md hover:border-2 hover:rounded-full hover:shadow-green-600"
       >
         Save Quiz
       </button>
+    </div>
     </div>
   );
 };
