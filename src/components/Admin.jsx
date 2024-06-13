@@ -1,4 +1,4 @@
-// src/components/Admin.js
+
 import React, { useState } from 'react';
 
 const Admin = () => {

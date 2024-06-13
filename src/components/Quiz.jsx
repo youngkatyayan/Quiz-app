@@ -1,4 +1,4 @@
-// src/components/Quiz.js
+
 import React, { useState } from 'react';
 
 const Quiz = () => {
@@ -6,7 +6,7 @@ const Quiz = () => {
   const [answers, setAnswers] = useState([]);
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
-  const [showResults, setShowResults] = useState(false); // Added to show correct/incorrect answers
+  const [showResults, setShowResults] = useState(false); 
 
   const quizzes = JSON.parse(localStorage.getItem('quizzes')) || [];
 
@@ -28,7 +28,7 @@ const Quiz = () => {
     results.push({ quiz: selectedQuiz.title, answers, score: totalScore });
     localStorage.setItem('results', JSON.stringify(results));
     setSubmitted(true);
-    setShowResults(true); // Show correct/incorrect answers after submission
+    setShowResults(true);
   };
 
   return (

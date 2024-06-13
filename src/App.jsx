@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from 'react';
 import { Route, Routes, Link } from 'react-router-dom';
 import Admin from './components/Admin';
